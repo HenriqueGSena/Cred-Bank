@@ -16,5 +16,5 @@
     <property name="uuidType" value="varchar(36)" dbms="mysql"/>
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
-    <!--<include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>-->
+    <include file="/config/liquibase/changelog/20240619210958_authority_users.xml" relativeToChangelogFile="false"/>
 </databaseChangeLog>
