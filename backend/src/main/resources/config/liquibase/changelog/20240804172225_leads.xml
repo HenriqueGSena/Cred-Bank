@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+
+    <changeSet id="20240805182346" author="sena">
+        <createTable tableName="leads">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints nullable="false" primaryKey="true" />
+            </column>
+            <column name="uuid" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="nome" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="uf" type="VARCHAR(2)">
+                <constraints nullable="false" />
+            </column>
+            <column name="cpf" type="VARCHAR(11)">
+                <constraints nullable="false" />
+            </column>
+            <column name="ag" type="VARCHAR(5)">
+                <constraints nullable="false" />
+            </column>
+            <column name="cc" type="VARCHAR(9)">
+                <constraints nullable="false" />
+            </column>
+            <column name="tel1" type="VARCHAR(20)">
+                <constraints nullable="false" />
+            </column>
+            <column name="tel2" type="VARCHAR(20)">
+                <constraints nullable="false" />
+            </column>
+            <column name="tel3" type="VARCHAR(20)">
+                <constraints nullable="false" />
+            </column>
+            <column name="tel4" type="VARCHAR(20)">
+                <constraints nullable="false" />
+            </column>
+            <column name="cargo" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="nomeEmpregador" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="cdc" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="consig" type="VARCHAR(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="dataNascimento" type="VARCHAR(40)">
+                <constraints nullable="false" />
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>

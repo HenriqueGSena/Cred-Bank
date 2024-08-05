@@ -17,4 +17,5 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="/config/liquibase/changelog/20240619210958_authority_users.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240804172225_leads.xml" relativeToChangelogFile="false"/>
 </databaseChangeLog>
