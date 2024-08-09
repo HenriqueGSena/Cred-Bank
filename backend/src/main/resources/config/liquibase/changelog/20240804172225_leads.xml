@@ -13,49 +13,34 @@
                 <constraints nullable="false" primaryKey="true" />
             </column>
             <column name="uuid" type="VARCHAR(255)">
-                <constraints nullable="false" />
             </column>
             <column name="nome" type="VARCHAR(255)">
-                <constraints nullable="false" />
             </column>
             <column name="uf" type="VARCHAR(2)">
-                <constraints nullable="false" />
             </column>
             <column name="cpf" type="VARCHAR(11)">
-                <constraints nullable="false" />
             </column>
             <column name="ag" type="VARCHAR(5)">
-                <constraints nullable="false" />
             </column>
             <column name="cc" type="VARCHAR(9)">
-                <constraints nullable="false" />
             </column>
             <column name="tel1" type="VARCHAR(20)">
-                <constraints nullable="false" />
             </column>
             <column name="tel2" type="VARCHAR(20)">
-                <constraints nullable="false" />
             </column>
             <column name="tel3" type="VARCHAR(20)">
-                <constraints nullable="false" />
             </column>
             <column name="tel4" type="VARCHAR(20)">
-                <constraints nullable="false" />
             </column>
             <column name="cargo" type="VARCHAR(255)">
-                <constraints nullable="false" />
             </column>
-            <column name="nomeEmpregador" type="VARCHAR(255)">
-                <constraints nullable="false" />
+            <column name="empregador" type="VARCHAR(255)">
             </column>
             <column name="cdc" type="VARCHAR(255)">
-                <constraints nullable="false" />
             </column>
             <column name="consig" type="VARCHAR(255)">
-                <constraints nullable="false" />
             </column>
-            <column name="dataNascimento" type="VARCHAR(40)">
-                <constraints nullable="false" />
+            <column name="nascimento" type="DATE">
             </column>
         </createTable>
     </changeSet>

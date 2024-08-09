@@ -3,6 +3,7 @@ package com.credbank.backend.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Table(name = "leads")
@@ -51,8 +52,8 @@ public class Leads {
     @Column(name = "cargo")
     private String cargo;
 
-    @Column(name = "nomeEmpregador")
-    private String nomeEmpregador;
+    @Column(name = "empregador")
+    private String empregador;
 
     @Column(name = "cdc")
     private String cdc;
@@ -60,6 +61,6 @@ public class Leads {
     @Column(name = "consig")
     private String consig;
 
-    @Column(name = "dataNascimento")
-    private LocalDateTime dataNascimento;
+    @Column(name = "nascimento")
+    private LocalDate nascimento;
 }
